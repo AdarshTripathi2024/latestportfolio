@@ -87,22 +87,36 @@
 		$('.home-slider').owlCarousel({
 	    loop:true,
 	    autoplay: true,
+	    autoplayTimeout: 5000,
 	    margin:0,
 	    animateOut: 'fadeOut',
 	    animateIn: 'fadeIn',
 	    nav:false,
 	    autoplayHoverPause: false,
+	    smartSpeed: 700,
+	    mouseDrag: true,
+	    touchDrag: true,
+	    pullDrag: true,
 	    items: 1,
 	    navText : ["<span class='ion-md-arrow-back'></span>","<span class='ion-chevron-right'></span>"],
 	    responsive:{
 	      0:{
-	        items:1
+	        items:1,
+	        mouseDrag: false,
+	        touchDrag: false,
+	        pullDrag: false
 	      },
 	      600:{
-	        items:1
+	        items:1,
+	        mouseDrag: false,
+	        touchDrag: false,
+	        pullDrag: false
 	      },
 	      1000:{
-	        items:1
+	        items:1,
+	        mouseDrag: true,
+	        touchDrag: true,
+	        pullDrag: true
 	      }
 	    }
 		});
@@ -274,4 +288,3 @@
 
 
 })(jQuery);
-
